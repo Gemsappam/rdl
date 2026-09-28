@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rosa di Luna — доставка цветов 24/7</title>
+<meta name="description" content="Rosa di Luna — сервис эмоций 24/7/365. Доставляем цветы и подарки днём и ночью по Москве и области.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cousine&family=Montserrat:wght@400;500;600;700&family=Onest:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <button class="burger" aria-label="Открыть меню" data-open-menu><span></span><span></span><span></span></button>
+  <a class="brand" href="/" aria-label="Rosa di Luna — на главную"><img src="assets/img/logo-mark.png" alt="Rosa di Luna" width="74" height="89"></a>
+  <nav class="header-icons" aria-label="Аккаунт">
+    <button aria-label="Поиск"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7.5"/><path d="M16 16l5.5 5.5"/></svg></button>
+    <button aria-label="Профиль"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4.2"/><path d="M4 22c0-4.6 3.6-8 8-8s8 3.4 8 8"/></svg></button>
+    <button aria-label="Избранное" class="fav-link"><svg viewBox="0 0 24 24"><path d="M12 21s-8.5-5.3-8.5-11.4C3.5 6.5 5.8 4 8.7 4c1.6 0 2.8.8 3.3 1.9C12.5 4.8 13.7 4 15.3 4c2.9 0 5.2 2.5 5.2 5.6C20.5 15.7 12 21 12 21z"/></svg></button>
+    <button aria-label="Корзина" class="cart-link"><svg viewBox="0 0 24 24"><path d="M2 3h3l2.4 12.2a1.5 1.5 0 0 0 1.5 1.2h9.4a1.5 1.5 0 0 0 1.5-1.1L22 7H6"/><circle cx="9.5" cy="20.5" r="1.3"/><circle cx="17.5" cy="20.5" r="1.3"/><path d="M11 11h7"/></svg><span class="cart-badge" data-cart-count>1</span></button>
+  </nav>
+</header>
+
+<div class="menu" data-menu hidden>
+  <div class="menu-panel">
+    <button class="menu-close" aria-label="Закрыть меню" data-close-menu>×</button>
+    <nav>
+      <a href="#catalog">Каталог</a><a href="#catalog">Все букеты</a><a href="#constructor">Конструктор букета</a>
+      <a href="#subscription">Цветочная подписка</a><a href="#journal">RDL Journal</a><a href="#footer">Контакты</a>
+    </nav>
+  </div>
+</div>
+
+<main class="sheet">
+  <div class="wrap">
+    <section class="hero">
+      <img src="assets/img/hero.jpg" alt="Кустовые тюльпаны в розовой упаковке" class="hero-img">
+      <div class="hero-content">
+        <h1>Кустовые тюльпаны</h1>
+        <p>от 200 ₽/шт</p>
+        <a href="#catalog" class="btn btn-white">выбрать букет <span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <nav class="stories" aria-label="Разделы">
+      <a href="#catalog"><img src="assets/img/circle1.png" alt=""><b>каталог</b></a>
+      <a href="#catalog"><img src="assets/img/circle2.png" alt=""><span>#длядома</span></a>
+      <a href="#catalog"><img src="assets/img/circle3.png" alt=""><b>акции</b></a>
+      <a href="#catalog"><img src="assets/img/circle4.png" alt=""><span>розы</span></a>
+      <a href="#footer"><img src="assets/img/circle5.png" alt=""><b>о нас</b></a>
+      <a href="#catalog"><img src="assets/img/circle6.png" alt=""><span>популярное</span></a>
+    </nav>
+
+    <nav class="cats" aria-label="Категории">
+      <a href="#catalog" class="cat"><img src="assets/img/cat1.png" alt=""><span class="t-top">Моно<br>букеты</span></a>
+      <a href="#catalog" class="cat"><img src="assets/img/cat2.png" alt=""><span class="t-bottom">Авторские<br>букеты</span></a>
+      <a href="#catalog" class="cat"><img src="assets/img/cat3.png" alt=""><span class="t-top">Сладкие<br>наборы</span></a>
+      <a href="#catalog" class="cat"><img src="assets/img/cat4.png" alt=""><span class="t-bottom">Не большие<br>букеты</span></a>
+      <a href="#catalog" class="cat"><img src="assets/img/cat5.png" alt=""><span class="t-top">Коробки<br>и корзины</span></a>
+    </nav>
+
+    <section class="products" id="catalog" data-products></section>
+  </div>
+
+  <section class="band">
+    <div class="wrap band-grid">
+      <article class="promo promo-constructor" id="constructor">
+        <img src="assets/img/constructor.jpg" alt="Цветы для онлайн-конструктора" class="promo-constructor-img">
+        <div class="promo-body">
+          <p class="eyebrow">онлайн конструктор букетов</p>
+          <h2>Соберите ваш<br>букет онлайн</h2>
+          <p class="promo-text">Вы выбираете цветы, стиль и размер букета <br>в онлайн-конструкторе. Мы собираем и <br>доставляем готовую композицию.</p>
+          <a href="#catalog" class="btn btn-black">собрать букет <span class="arr">→</span></a>
+        </div>
+        <img src="assets/img/asterisk.png" alt="" class="promo-asterisk">
+      </article>
+      <article class="promo promo-sub" id="subscription">
+        <img src="assets/img/subscription.jpg" alt="Сезонные цветы на столе флориста" class="promo-sub-img">
+        <div class="promo-body">
+          <span class="bowls" aria-hidden="true"><i></i><i></i></span>
+          <p class="eyebrow">−10% на первый месяц</p>
+          <h2>Цветочная<br>подписка</h2>
+          <p class="promo-text">Просто выберите размер букета. Мы будем <br>собирать свежий букет каждую неделю <br>или раз в месяц - без повторов.</p>
+          <a href="#subscription" class="btn btn-black">оформить подписку <span class="arr">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="journal" id="journal">
+      <h2 class="journal-title">RDL Journal</h2>
+      <div class="journal-grid">
+        <a class="post post-big" href="#journal">
+          <img src="assets/img/journal1.jpg" alt="Цветы и секатор на столе флориста">
+          <p class="meta">время чтения · 4 минуты</p>
+          <h3>Язык цветов</h3>
+          <p>Что означают оттенки, формы и сочетания цветов — и как выбрать букет.</p>
+          <span class="read">Читать <span class="arr">→</span></span>
+        </a>
+        <a class="post" href="#journal">
+          <img src="assets/img/journal2.jpg" alt="Букет подсолнухов">
+          <p class="meta">время чтения · 4 минуты</p>
+          <h3>Эстетика дня и вечера</h3>
+          <p>Как флористика сопровождает день и вечер, создавая настроение и подчёркивая момент.</p>
+          <span class="read">Читать <span class="arr">→</span></span>
+        </a>
+        <a class="post" href="#journal">
+          <img src="assets/img/journal3.jpg" alt="Флорист собирает букет из пионов и роз">
+          <p class="meta">время чтения · 4 минуты</p>
+          <h3>Выбор букета</h3>
+          <p>Нежкий жест внимания, торжественный момент или особый вечер.</p>
+          <span class="read">Читать <span class="arr">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">RDL рассылка</p>
+        <h2>Свежие поставки и акции</h2>
+      </div>
+      <form class="nl-form" data-newsletter novalidate>
+        <input type="email" name="email" placeholder="Введите ваш email" aria-label="Email" required>
+        <button type="submit" aria-label="Подписаться"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+        <p class="nl-msg" data-nl-msg role="status"></p>
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer class="footer" id="footer">
+  <img src="assets/img/blob.png" alt="" class="footer-blob">
+  <div class="wrap footer-grid">
+    <div class="f-brand">
+      <img src="assets/img/logo-footer.png" alt="Rosa di Luna" width="230" height="81">
+      <p class="f-slogan">Сервис эмоций 24/7/365</p>
+      <p>Доставляем днём и ночью.<br>Москва и область.</p>
+    </div>
+    <div class="f-col"><h4>Для покупателей</h4><a href="#">О нас</a><a href="#">Доставка и оплата</a><a href="#">Уход за цветами</a><a href="#">Акции</a><a href="#">Вопросы и ответы</a><a href="#">Юридическая информация</a></div>
+    <div class="f-col"><h4>Каталог</h4><a href="#catalog">Все букеты</a><a href="#catalog">Авторские композиции</a><a href="#subscription">Цветочная подписка</a><a href="#catalog">Подарки и дополнения</a><a href="#">Корпоративные заказы</a><a href="#constructor">Конструктор букета</a></div>
+    <div class="f-col"><h4>Соц сети</h4><a href="#">ВКонтакте</a><a href="#">WhatsApp</a><a href="#">Telegram</a><a href="#">YouTube</a></div>
+    <div class="f-col"><h4>Контакты</h4><a href="tel:88003334980">8 800 333-49-80</a><a href="mailto:info@rdl.ru">info@rdl.ru</a><span>Работаем 24/7</span></div>
+  </div>
+  <div class="wrap">
+    <h4 class="pay-title">Оплата удобным для вас способом</h4>
+    <div class="pay">
+      <img src="assets/img/pay1.png" alt="T-Pay"><img src="assets/img/pay2.png" alt="Visa"><img src="assets/img/pay3.png" alt="СБП"><img src="assets/img/pay4.png" alt="Mastercard"><img src="assets/img/pay5.png" alt="Альфа Банк"><img src="assets/img/pay6.png" alt="Яндекс Сплит"><img src="assets/img/pay7.png" alt="Мир"><img src="assets/img/pay8.png" alt="Подели"><img src="assets/img/pay9.png" alt="Долями"><img src="assets/img/pay10.png" alt="СберБанк">
+    </div>
+    <div class="f-bottom">
+      <span>© 2025 Rosa di Luna. Все права защищены.</span>
+      <nav><a href="#">Пользовательское соглашение</a><a href="#">Политика конфиденциальности</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
